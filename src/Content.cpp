@@ -28,9 +28,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "Content.hpp"
 
 #include <utility>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 #include <libxml++/libxml++.h>
-#include <exception>
 
 #include "SQLiteUtils.hpp"
 
@@ -44,7 +43,7 @@ using std::cout;
 using std::endl;
 #endif
 
-using namespace boost::filesystem;
+using std::filesystem::path;
 using namespace xmlpp;
 
 ContentItem::ContentItem(ContentType _type, CSSRule _rule, path _file, ustring _id, ustring _content, ustring _stripped_content) :

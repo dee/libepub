@@ -28,7 +28,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "Container.hpp"
 
 #include <vector>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 #include <libxml++/libxml++.h>
 #include <stdlib.h>
 #include <utility>
@@ -46,7 +46,7 @@ using std::cout;
 using std::endl;
 #endif
 
-using namespace boost::filesystem;
+using std::filesystem::path;
 using namespace Glib;
 using namespace xmlpp;
 using std::string;

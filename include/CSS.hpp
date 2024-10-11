@@ -28,7 +28,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef CSS_HEADER
 #define CSS_HEADER
 
-#include <boost/filesystem.hpp>
+#include <filesystem>
 #include <glibmm.h>
 #include <set>
 #include <map>
@@ -45,7 +45,7 @@ using std::vector;
 using std::unordered_set;
 using std::string;
 
-using namespace boost::filesystem;
+using std::filesystem::path;
 
 #include "css/CSSSpecificity.hpp"
 #include "css/CSSSelector.hpp"

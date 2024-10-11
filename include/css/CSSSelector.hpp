@@ -28,6 +28,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef CSS_SELECTOR_HEADER
 #define CSS_SELECTOR_HEADER
 
+#include "CSSSpecificity.hpp"
+
 #include <unordered_set>
 #include <vector>
 #include <string>

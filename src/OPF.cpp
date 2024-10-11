@@ -28,7 +28,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "OPF.hpp"
 
 #include <utility>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 #include <libxml++/libxml++.h>
 #include <exception>
 
@@ -43,7 +43,7 @@ using std::cout;
 using std::endl;
 #endif
 
-using namespace boost::filesystem;
+using std::filesystem::path;
 using namespace xmlpp;
 
 //// MetadataItem:

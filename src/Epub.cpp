@@ -35,7 +35,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <locale>
 #include <sys/types.h>
 #include <sys/wait.h>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 #include <boost/lexical_cast.hpp>
 #include <boost/functional/hash.hpp>
 
@@ -48,7 +48,7 @@ using std::stringstream;
 using std::locale;
 using std::hex;
 using std::ifstream;
-using namespace boost::filesystem;
+using std::filesystem::path;
 using boost::lexical_cast;
 using boost::hash_combine;
 
@@ -87,7 +87,7 @@ Epub::Epub(string _filename) :
 	#endif
 
 	//Now to do work.
-	path to_tmp = temp_directory_path();
+    path to_tmp = std::filesystem::temp_directory_path();
 	#ifdef DEBUG
 	cout << "Temporary path is " << to_tmp << endl;
 	#endif

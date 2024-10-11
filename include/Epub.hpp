@@ -28,8 +28,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef EPUB_HEADER
 #define EPUB_HEADER
 
-#include <string>
-#include <utility>
 #include <vector>
 #include <cstdlib>
 #include <sqlite3.h>

@@ -31,8 +31,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <string>
 #include <map>
 #include <vector>
-#include <boost/filesystem.hpp>
-#include <utility>
+#include <filesystem>
 #include <glibmm.h>
 #include <sqlite3.h>
 
@@ -41,7 +40,7 @@ using std::string;
 using std::map;
 using std::vector;
 
-using namespace boost::filesystem;
+using std::filesystem::path;
 using namespace Glib;
 
 enum MetadataType {

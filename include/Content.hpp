@@ -28,10 +28,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef Content_HEADER
 #define Content_HEADER
 
-#include <string>
 #include <vector>
-#include <boost/filesystem.hpp>
-#include <boost/flyweight.hpp>
+#include <filesystem>
 #include <glibmm.h>
 #include <sqlite3.h>
 
@@ -39,7 +37,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 using std::vector;
 
-using namespace boost::filesystem;
+using std::filesystem::path;
 using namespace Glib;
 
 enum ContentType {

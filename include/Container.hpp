@@ -29,13 +29,13 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define CONTAINER_HEADER
 
 #include <vector>
-#include <boost/filesystem.hpp>
+#include <filesystem>
 #include <glibmm.h>
 #include <sqlite3.h>
 
 using std::vector;
 
-using namespace boost::filesystem;
+using std::filesystem::path;
 using namespace Glib;
 
 class RootFile {
